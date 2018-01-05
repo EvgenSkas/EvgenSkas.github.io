@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/bootstrap-grid.css">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -63,7 +64,7 @@
 								<li><a href="#">Полипропилен</a></li>
 							</ul>
 						</li>
-						<li class="service"><a href="service.html" class="active_nav">Услуги</a><i class="fa fa-angle-down active_nav" aria-hidden="true"></i><ul class="menu-items">
+						<li class="service"><a href="service.html">Услуги</a><i class="fa fa-angle-down" aria-hidden="true"></i><ul class="menu-items">
 							<li><a href="service1.html">Доставка</a></li>
 							<li><a href="#">Хранение материала</a></li>
 							<li><a href="#">Дополнительное паллетирование</a></li>
@@ -73,7 +74,7 @@
 						</ul></li>
 						<li><a href="news.html">Новости</a>
 						</li>
-						<li class="aplication"><a href="application.html">Приминение</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+						<li class="aplication"><a href="application.html" class="active_nav">Приминение</a><i class="fa fa-angle-down active_nav" aria-hidden="true"></i>
 							<ul class="menu-items">
 								<li><a href="#">Полиэтилен низкого давления</a></li>
 								<li><a href="#">Поликарбонат</a></li>
@@ -91,36 +92,35 @@
 		</section>
 	</header>
 		<main>
-			<section class="service">
+			<section class="application">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<span class="way">Главная / Услуги</span>
+							<span class="way">Главная / Применение</span>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-12">
-							<article class="service-page">
-								<div class="service-icons">1</div>
-								<h1>Доставка</h1>
-								<p>Новые полимерные материалы - полиолефиновые эластомеры – результат работы совместного предприятия компаний SABIC и SK Global Chemical (Южная Корея), образованного в 2015 году.</p>
-								<p>Полиолефиновые эластомеры (POE) производства SABIC - полимеры очень низкой плотности на основе звеньев этилена с высоким содержанием сомономера октена, изготовленные на металлоценовом катализаторе. Уникальность данных материалов в том, что эластомеры обладают с одной стороны свойствами каучука (исключительная прочность на изгиб, растяжение, удар), и в то же время перерабатываются, как обычные термопласты.</p>
-								<a class="popup-with-move-anim" href="#callback"><button class="btn">Заказать</button></a>
-							</article>
+							<div class="application-content">
+								<h1>Вопрос-ответ</h1>
+								<h2>Aдрес офиса: 220006 г. Минск, ул. Маяковского, 26, офис 1</h2>
+								<p>Данный раздел мы формируем на основании вопросов, которые поступают в адрес нашей компании от специалистов предприятий-переработчиков полимерных материалов (т.е. наших Клиентов). Информацию  мы стараемся изложить в краткой и доступной форме, систематизировав  по темам переработки.</p>
+								<p>Ответы подготовлены техническим специалистом нашей компании, технологом-консультантом, имеющим большой профессиональный практический опыт  в области переработки пластмасс различными методами.</p>
+								<p>Будем рады, если данный материал поможет  вам в вашей работе.</p>
+								<ul>
+									<li><a href="#" class="active">Полимерные пленки</a></li>
+									<li><a href="#">Суперконцентраты красителей и модифицирующих добавок</a></li>
+									<li><a href="#">Литье под давлением</a></li>
+								</ul>
+								<article>
+									<p class="question">Возможно ли изготовить рукавную полипропиленовую пленку на оборудовании, предназначенном для изготовления рукавной полиэтиленовой пленки?</p>
+									<p class="answer">Изготовить рукавную полипропиленовую пленку на стандартном оборудовании, предназначенном для изготовления рукавной полиэтиленовой пленки (снизу-вверх) невозможно. Потому что на данном оборудовании конструкция узла охлаждения не обеспечит достаточное охлаждение полипропиленовой пленки. Однако на рынке пленочного экструзионного оборудования уже имеются современные линии, позволяющие изготавливать рукавную полипропиленовую пленку снизу-вверх.</p>
+								</article>
+								<article>
+									<p class="question">Возможно ли изготовить рукавную полипропиленовую пленку на оборудовании, предназначенном для изготовления рукавной полиэтиленовой пленки?</p>
+								</article>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section class="form">
-					<div class="form-feedback">
-						<h2>Обратная связь</h2>
-						<form method="post" class="feedback_catalog callback2" id="callback2">
-							<input type="text" name="phone" placeholder="Контактный телефон*" required>
-							<input type="text" name="email" placeholder="E-mail*" required>
-							<textarea name="feedback" id="feedback_catalog" placeholder="Ваши коментарии..." rows="6" cols="6"></textarea>
-							<button class="btn">Отправить</button>
-						</form>
-					</div>
 			</section>
 		</main>
 	<footer>
@@ -210,5 +210,5 @@
 				<script src="js/scripts.min.js"></script>
 	
 			<a href="#" class="scrollup"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-			</body>
-			</html>
+</body>
+</html>

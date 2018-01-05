@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/bootstrap-grid.css">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -24,7 +25,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 
-<body class=ishome>
+<body class="ishome">
 	<header>
 		<section class="main-head">
 			<div class="container">
@@ -36,7 +37,7 @@
 						<div class="email"><i class="fa fa-envelope blue" aria-hidden="true"></i>
 							E-mail: <a class="popup-with-move-anim" href="#callback">info@a8polymer.ru</a>
 						</div>
-						<div class="phone">Многоканальный<a class="popup-with-move-anim" href="#callback"><i class="fa fa-phone" aria-hidden="true"></i>
+						<div class="phone">Многоканальный <a class="popup-with-move-anim" href="#callback"><i class="fa fa-phone" aria-hidden="true"></i>
 							+7 495 649 39 79</a>
 						</div>
 					</div>
@@ -51,7 +52,7 @@
 						<strong>Поставка полимеров</strong>
 					</div>
 					<ul class="sf-menu hidden">
-						<li><a href="index.html">Главная</a></li>
+						<li><a href="index.html" class="active_nav">Главная</a></li>
 						<li class="catalog">
 							<a href="catalog1.html">Каталог</a><i class="fa fa-angle-down" aria-hidden="true"></i>
 							<ul class="menu-items">
@@ -83,89 +84,90 @@
 								<li><a href="#">Полипропилен</a></li>
 							</ul>
 						</li>
-						<li><a href="contacts.html" class="active_nav">Контакты</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
 						<li><a href="route.html">Схема проезда</a></li>
 					</ul>
 				</nav>
 			</div>
 		</section>
+		
 	</header>
-		<main>
-			<section class="contacts-page">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<span class="way">Главная / Контакты</span>
-						</div>
-						<div class="col-12">
-							<h1>Контакты</h1>
-							<span class="bold">Aдрес офиса: 220006 г. Минск, ул. Маяковского, 26, офис 1</span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-sm-3">
-							<h5>Администратор:</h5>
-							<ul>
-								<li>Тел.: +375 (17) 285-11-63 (68)</li>
-								<li>Факс: +375 (17) 285-09-19</li>
-								<li>Моб.: +375 (29) 685-09-36</li>
-								<li>Эл. адрес: mail@polymer.by</li>
-							</ul>
-						</div>
-						<div class="col-12 col-sm-3">
-							<h5>Отдел продаж:</h5>
-							<ul>
-								<li>Тел.: +375 (17) 285-09-14 (15,16)</li>
-								<li>Тел.: +375 (17) 285-11-65</li>
-								<li>Моб.: +375 (29) 685-09-14 (16)</li>
-								<li>Моб.: +375 (29) 505-09-16 (19)</li>
-								<li>Эл. адрес: prod@polymer.by</li>
-							</ul>
-						</div>
-						<div class="col-12 col-sm-3">
-							<h5>Финансовый отдел:</h5>
-							<ul>
-								<li>Тел.: +375 (17) 223-21-19</li>
-								<li>Тел.: +375 (17) 223-26-19</li>
-								<li>Эл. адрес: fin@polymer.by</li>
-							</ul>
-						</div>
-						<div class="col-12 col-sm-3">
-							<h5>Отдел логистики:</h5>
-							<ul>
-								<li>Тел.: +375 (17) 291-45-95</li>
-								<li>Эл. адрес: logist@polymer.by</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="contact-info">
-								<span class="blue">Skype: polymertorg</span>
-								<p class="bold">Если у Вас возникли вопросы по качеству продукции, целостности упаковки, сервису (доставка, загрузка, оформление документов и другие) просим Вас обращаться к нам по телефонам:</p>
-								<ul>
-									<li>Моб.: :+ 375 (29) 865-14-59 MTC</li>
-									<li>Гор.: +375 (17) 285-09-14 (15,16)</li>
-									<li>Е-mail: pinchuk@polymer.by</li>
-								</ul>
-								<p class="bold">Пинчук Валентина Михайловна, специалист отдела продаж</p>
-							</div>
-						</div>
+	<main>
+
+		<section class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<span class="way">Главная / Услуги</span>
 					</div>
 				</div>
-			</section>
-			<section class="form">
-					<div class="form-feedback">
-						<h2>Обратная связь</h2>
-						<form method="post" class="feedback_catalog callback2" id="callback2">
-							<input type="text" name="phone" placeholder="Контактный телефон*" required>
-							<input type="text" name="email" placeholder="E-mail*" required>
-							<textarea name="feedback" id="feedback_catalog" placeholder="Ваши коментарии..." rows="6" cols="6"></textarea>
-							<button class="btn">Отправить</button>
-						</form>
+					<h1>Новости</h1>
+				<div class="row">
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news1.jpg" alt="news1">
+							<h4>Металлоценовые октеновые<br> эластомеры </h4>
+							<p>Новые полимерные материалы - полиолефиновые эластомеры – результат работы совместного...</p>
+							<a href="#">Подробнее</a>
+						</article>
 					</div>
-			</section>
-		</main>
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news2/1.jpg" alt="news2">
+							<h4>Полипропилен нового поколения для жесткой упаковки </h4>
+							<p>Компания SABIC начала производство марки FPC45 из линейки ударопрочных сополимеров...
+							</p>
+							<a href="#">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news3.jpg" alt="news3">
+							<h4>Новые возможности для производителей - полиэтилен высокого давления SABIC...</h4>
+							<p>Производители, использующие полиэтилен высокого давления в своем производстве, уже... 
+							</p>
+							<a href="#">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news1.jpg" alt="news1">
+							<h4>Металлоценовые октеновые<br> эластомеры </h4>
+							<p>Новые полимерные материалы - полиолефиновые эластомеры – результат работы совместного...</p>
+							<a href="#">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news2/1.jpg" alt="news2">
+							<h4>Полипропилен нового поколения для жесткой упаковки </h4>
+							<p>Компания SABIC начала производство марки FPC45 из линейки ударопрочных сополимеров...
+							</p>
+							<a href="#">Подробнее</a>
+						</article>
+					</div>
+					<div class="col-md-12 col-lg-4">
+						<article class="news_item">
+							<img src="img/news3.jpg" alt="news3">
+							<h4>Новые возможности для производителей - полиэтилен высокого давления SABIC...</h4>
+							<p>Производители, использующие полиэтилен высокого давления в своем производстве, уже... 
+							</p>
+							<a href="#">Подробнее</a>
+						</article>
+					</div>
+					<ul class="numbers">
+						<li><a href="#" class="active">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">10</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</main>
 	<footer>
 		<div class="footer-content">
 			<div class="container">
@@ -242,16 +244,16 @@
 			<h2>Обратная связь</h2>
 			<p>Пожалуйста, заполните форму заказа 
 			и мы свами свяжемся</p>
-			<input type="text" placeholder="Контактный телефон*" required>
-			<input type="text" placeholder="E-mail*">
-			<textarea name="" id="" cols="30" rows="6" placeholder="Ваши коментарии..."></textarea>
+			<input type="text" name="phone" placeholder="Контактный телефон*" required>
+			<input type="text" name="email" placeholder="E-mail*">
+			<textarea name="comments" id="" cols="30" rows="6" placeholder="Ваши коментарии..."></textarea>
 			<button class="btn">Отправить</button>
 		</form>
 	</div>
 
 				<link rel="stylesheet" href="css/main.min.css">
 				<script src="js/scripts.min.js"></script>
-	
+
 			<a href="#" class="scrollup"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-</body>
-</html>
+			</body>
+			</html>

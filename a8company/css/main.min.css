@@ -2588,21 +2588,25 @@
   opacity: .75;
   color: black; }
 
+/* Magnific Popup CSS */
 .mfp-bg {
-  z-index: 1042;
-  overflow: hidden;
-  background: #0b0b0b;
-  opacity: .8; }
-
-.mfp-bg, .mfp-wrap {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  position: fixed; }
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.8; }
 
 .mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1043;
+  position: fixed;
   outline: none !important;
   -webkit-backface-visibility: hidden; }
 
@@ -2618,7 +2622,7 @@
           box-sizing: border-box; }
 
 .mfp-container:before {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle; }
@@ -2634,7 +2638,8 @@
   text-align: left;
   z-index: 1045; }
 
-.mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
   width: 100%;
   cursor: auto; }
 
@@ -2653,7 +2658,10 @@
 .mfp-auto-cursor .mfp-content {
   cursor: auto; }
 
-.mfp-arrow, .mfp-close, .mfp-counter, .mfp-preloader {
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2666,26 +2674,30 @@
   display: none !important; }
 
 .mfp-preloader {
-  color: #ccc;
+  color: #CCC;
   position: absolute;
   top: 50%;
   width: auto;
   text-align: center;
-  margin-top: -.8em;
+  margin-top: -0.8em;
   left: 8px;
   right: 8px;
   z-index: 1044; }
 
 .mfp-preloader a {
-  color: #ccc; }
+  color: #CCC; }
 
 .mfp-preloader a:hover {
-  color: #fff; }
+  color: #FFF; }
 
-.mfp-s-error .mfp-content, .mfp-s-ready .mfp-preloader {
+.mfp-s-ready .mfp-preloader {
   display: none; }
 
-button.mfp-arrow, button.mfp-close {
+.mfp-s-error .mfp-content {
+  display: none; }
+
+button.mfp-close,
+button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
   background: transparent;
@@ -2713,14 +2725,15 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: .65;
+  opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #fff;
+  color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial,Baskerville,monospace; }
+  font-family: Arial, Baskerville, monospace; }
 
-.mfp-close:focus, .mfp-close:hover {
+.mfp-close:hover,
+.mfp-close:focus {
   opacity: 1; }
 
 .mfp-close:active {
@@ -2729,8 +2742,9 @@ button::-moz-focus-inner {
 .mfp-close-btn-in .mfp-close {
   color: #333; }
 
-.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
-  color: #fff;
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+  color: #FFF;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -2740,14 +2754,14 @@ button::-moz-focus-inner {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ccc;
+  color: #CCC;
   font-size: 12px;
   line-height: 18px;
   white-space: nowrap; }
 
 .mfp-arrow {
   position: absolute;
-  opacity: .65;
+  opacity: 0.65;
   margin: 0;
   top: 50%;
   margin-top: -55px;
@@ -2759,11 +2773,13 @@ button::-moz-focus-inner {
 .mfp-arrow:active {
   margin-top: -54px; }
 
-.mfp-arrow:focus, .mfp-arrow:hover {
+.mfp-arrow:hover,
+.mfp-arrow:focus {
   opacity: 1; }
 
-.mfp-arrow:after, .mfp-arrow:before {
-  content: "";
+.mfp-arrow:before,
+.mfp-arrow:after {
+  content: '';
   display: block;
   width: 0;
   height: 0;
@@ -2782,28 +2798,28 @@ button::-moz-focus-inner {
 .mfp-arrow:before {
   border-top-width: 21px;
   border-bottom-width: 21px;
-  opacity: .7; }
+  opacity: 0.7; }
 
 .mfp-arrow-left {
   left: 0; }
 
 .mfp-arrow-left:after {
-  border-right: 17px solid #fff;
+  border-right: 17px solid #FFF;
   margin-left: 31px; }
 
 .mfp-arrow-left:before {
   margin-left: 25px;
-  border-right: 27px solid #3f3f3f; }
+  border-right: 27px solid #3F3F3F; }
 
 .mfp-arrow-right {
   right: 0; }
 
 .mfp-arrow-right:after {
-  border-left: 17px solid #fff;
+  border-left: 17px solid #FFF;
   margin-left: 39px; }
 
 .mfp-arrow-right:before {
-  border-left: 27px solid #3f3f3f; }
+  border-left: 27px solid #3F3F3F; }
 
 .mfp-iframe-holder {
   padding-top: 40px;
@@ -2834,21 +2850,24 @@ button::-moz-focus-inner {
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   background: #000; }
 
+/* Main image in popup */
 img.mfp-img {
   width: auto;
   max-width: 100%;
   height: auto;
   display: block;
+  line-height: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 40px 0;
+  padding: 40px 0 40px;
   margin: 0 auto; }
 
-.mfp-figure, img.mfp-img {
+/* The shadow behind the image */
+.mfp-figure {
   line-height: 0; }
 
 .mfp-figure:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 40px;
@@ -2863,7 +2882,7 @@ img.mfp-img {
   background: #444; }
 
 .mfp-figure small {
-  color: #bdbdbd;
+  color: #BDBDBD;
   display: block;
   font-size: 12px;
   line-height: 14px; }
@@ -2882,7 +2901,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #f3f3f3;
+  color: #F3F3F3;
   word-wrap: break-word;
   padding-right: 36px; }
 
@@ -2892,7 +2911,10 @@ img.mfp-img {
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
 
-@media screen and (max-height: 300px), screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }
@@ -2929,7 +2951,7 @@ img.mfp-img {
     text-align: center;
     padding: 0; } }
 
-@media (max-width: 900px) {
+@media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
     -ms-transform: scale(0.75);
@@ -3035,12 +3057,6 @@ img.mfp-img {
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0; }
 
-/*!
- * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 @-ms-viewport {
   width: device-width; }
 
@@ -4754,6 +4770,7 @@ html {
     -webkit-align-self: stretch !important;
                 -ms-grid-row-align: stretch !important;
             align-self: stretch !important; } }
+
 *::-webkit-input-placeholder {
   color: #000;
   opacity: 1; }
@@ -5136,11 +5153,12 @@ li.aplication:hover ul.menu-items {
 
 .advantage {
   position: absolute;
-  top: 320px; }
+  top: 350px; }
 
 .advantage ul li {
   position: relative;
   display: inline-block;
+  background: url("../img/advantage-arrow.png") no-repeat center;
   width: 402px;
   height: 145px;
   margin-left: -35px;
@@ -5180,22 +5198,18 @@ li.aplication:hover ul.menu-items {
 
 .advantage ul li:first-child {
   z-index: 2;
-  margin-left: 0;
-  background-color: #FFF; }
+  margin-left: 0; }
   .advantage ul li:first-child h2 {
     padding-left: 20px; }
 
 .advantage ul li:nth-child(2) {
-  z-index: 1;
-  background-color: #FFF; }
+  z-index: 1; }
   .advantage ul li:nth-child(2) h2 {
     padding-left: 35px; }
 
 .advantage ul li:last-child {
   z-index: 0;
-  margin-left: -70px;
-  background: url("../img/advantage-arrow.png") no-repeat center;
-  background-size: cover; }
+  margin-left: -65px; }
   .advantage ul li:last-child h2 {
     background-position: 83px 45px; }
 
@@ -5400,27 +5414,23 @@ ul.multiple-items > button {
   border: 1px solid #EEF5FF;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  margin-bottom: 25px; }
-  .service-item .service-item-bg {
-    width: 110px;
-    height: 90px;
-    margin-bottom: 20px;
-    background: url("../img/sprite-service.png") no-repeat 0px top; }
-  .service-item .bg1 {
-    background-position: -110px top; }
-  .service-item .bg2 {
-    background-position: -220px top; }
-  .service-item .bg3 {
-    background-position: -330px top; }
-  .service-item .bg4 {
-    background-position: -440px top; }
-  .service-item .bg5 {
-    background-position: -550px top; }
+  margin-bottom: 25px;
+  background: url("../img/Service1.png") no-repeat center 55px;
+  background-color: rgba(238, 245, 255, 0); }
+  .service-item-bg {
+    background: url("../img/Service2.png") no-repeat center 55px; }
+  .service-item-bg2 {
+    background: url("../img/Service3.png") no-repeat center 55px; }
+  .service-item-bg3 {
+    background: url("../img/Service4.png") no-repeat center 55px; }
+  .service-item-bg4 {
+    background: url("../img/Service5.png") no-repeat center 55px; }
+  .service-item-bg5 {
+    background: url("../img/Service6.png") no-repeat center 55px; }
   .service-item button {
     margin: 45px 0; }
   .service-item h5 {
-    text-align: center;
-    height: 36px; }
+    text-align: center; }
 
 .service-item:hover {
   background-color: #eef5ff;
@@ -5460,7 +5470,7 @@ ul.multiple-items > button {
   background-color: #EEF5FF;
   padding: 0 0 55px; }
   .news h2 {
-    padding: 60px 0 50px;
+    padding: 40px 0;
     text-align: center; }
 
 .news_item {
@@ -5579,8 +5589,9 @@ ul.multiple-items > button {
                 -ms-grid-row-align: center;
             align-self: center; }
   .footer-map .stocks address {
-    max-width: 410px;
+    width: 400px;
     margin-right: 50px;
+    margin-bottom: 20px;
     padding: 35px 35px 35px 100px;
     font-size: 0.75em;
     line-height: 18px;
@@ -5834,9 +5845,6 @@ ul.multiple-items > button {
   text-align: center;
   margin: 40px 0; }
 
-.service h2 {
-  padding-top: 0; }
-
 .service-page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5860,7 +5868,7 @@ ul.multiple-items > button {
     width: 235px;
     height: 150px;
     margin: 0 auto;
-    background: url("../img/icons-uslugi-catalog-1.png") no-repeat -648px -62px; }
+    background: url("../img/uslugi/icons-uslugi-catalog-1.png") no-repeat -648px -62px; }
   .service-page h1 {
     padding-top: 35px; }
   .service-page p {
@@ -5997,6 +6005,8 @@ ul.multiple-items > button {
   li.catalog:hover ul.menu-items,
   li.service:hover ul.menu-items,
   li.aplication:hover ul.menu-items {
+    display: none; }
+  .stocks h3 {
     display: none; } }
 
 /* Medium Devices, Desktops */
