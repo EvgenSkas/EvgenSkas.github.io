@@ -31,9 +31,15 @@
 		<section class="top-panel">
 			<div class="container">
 				<ul class="top-panel-content">
-					<li class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
-					<li class="phone"><a href="#" class="icon-phone">1</a><span>+375 (29) 633 44 31</span><a href="#">заказать обратный звонок</a></li>
-					<li class="basket"><a href="#">1</a></li>
+					<li class="logo"><a href="index.html"><img class="mgfs" src="img/logo.png" alt="logo"></a></li>
+					<li class="phone">
+						<a href="#callback" class="icon-phone popup-mn">1</a>
+						<span>+375 (29) 633 44 31</span>
+						<a href="#callback" class="popup-mn">заказать обратный звонок</a>
+					</li>
+					<li class="basket" id="cart">
+						<a href="#" class="nav_basket">1</a>
+					</li>
 					<li class="m-menu">
 						<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
 					</li>
@@ -45,10 +51,10 @@
 				<li><a href="#" class="nav_rewards">Награды</a></li>
 				<li><a href="#" class="nav_reviews">Отзывы</a></li>
 				<li><a href="#" class="nav_delivery">Доставка и оплата</a></li>
-				<li><a href="#" class="nav_basket">Корзина (2)</a></li>
+				<li><a href="#" id="cartMnDrop" class="nav_basket">Корзина</a></li>
 				<li><a href="#" class="nav_contacts">Контакты</a></li>
 			</ul>
-		</section>
+		</section> 
 		<section class="banner">
 			<div class="container">
 				<div class="banner-content">
@@ -60,7 +66,7 @@
 							<li><a href="#" class="nav_rewards">Награды</a></li>
 							<li><a href="#" class="nav_reviews">Отзывы</a></li>
 							<li><a href="#" class="nav_delivery">Доставка и оплата</a></li>
-							<li><a href="#" class="nav_basket">Корзина (2)</a></li>
+							<li><a href="#" id="cartMn" class="nav_basket">Корзина</a></li>
 							<li><a href="#" class="nav_contacts">Контакты</a></li>
 						</ul>
 					</nav>
@@ -69,7 +75,7 @@
 						<p>Покупаете MAGFORMERS в подарок?<br>
 						Закажите бесплатную подарочную упаковку</p>
 					</div>
-					<button class="btn">Заказать!</button>
+					<a href="#callback" class="popup-mn"><button class="btn">Заказать!</button></a>
 					<div class="wrapper">
 						<div class="arrow-down"></div>
 					</div>
@@ -160,9 +166,10 @@
 									<p>Сказочные кристаллы и цветы, космические ракеты и волшебные замки, завораживающий подводный мир и ночной город - все это теперь можно построить и осветить 7-ю различными цветами! Набор идеален и как первый магнитный конструктор у Вас дома, и как развитие Вашей коллекции Magformers. Ведь все наши детали на 100% совместимы друг с другом. Ну а красивая, яркая коробка делает «Magformers Lighted Set» превосходным подарком.</p>
 									<p>Набор «Magformers Lighted Set» получил заслуженную награду — ассоциацией «Oppenheim Toy Portfolio» ему была присуждена платиновая медаль за 2013 год.</p>
 									<p>«Oppenheim Toy Portfolio» — независимый и некоммерческий обозреватель, с 1989 года тестирующий лучшие товары для детей. Отобранные игрушки проходят тройную экспертизу. В качестве экспертов выступают педагоги и детские психологи, родители и, конечно, дети.</p>
-									<button class="btn">Заказать</button>
-									<a href="#">В корзину</a>
+									
 								</div>
+								<button class="btn productItem">Заказать</button>
+								<a href="#" class="productItem">В корзину</a>
 							</div>
 						</div>
 						<div class="slider-item">
@@ -179,9 +186,10 @@
 									<p>Сказочные кристаллы и цветы, космические ракеты и волшебные замки, завораживающий подводный мир и ночной город - все это теперь можно построить и осветить 7-ю различными цветами! Набор идеален и как первый магнитный конструктор у Вас дома, и как развитие Вашей коллекции Magformers. Ведь все наши детали на 100% совместимы друг с другом. Ну а красивая, яркая коробка делает «Magformers Lighted Set» превосходным подарком.</p>
 									<p>Набор «Magformers Lighted Set» получил заслуженную награду — ассоциацией «Oppenheim Toy Portfolio» ему была присуждена платиновая медаль за 2013 год.</p>
 									<p>«Oppenheim Toy Portfolio» — независимый и некоммерческий обозреватель, с 1989 года тестирующий лучшие товары для детей. Отобранные игрушки проходят тройную экспертизу. В качестве экспертов выступают педагоги и детские психологи, родители и, конечно, дети.</p>
-									<button class="btn">Заказать</button>
-									<a href="#">В корзину</a>
+									
 								</div>
+								<button class="btn productItem">Заказать</button>
+								<a href="#" class="productItem">В корзину</a>
 							</div>
 						</div>
 						<div class="slider-item">
@@ -198,9 +206,10 @@
 									<p>Сказочные кристаллы и цветы, космические ракеты и волшебные замки, завораживающий подводный мир и ночной город - все это теперь можно построить и осветить 7-ю различными цветами! Набор идеален и как первый магнитный конструктор у Вас дома, и как развитие Вашей коллекции Magformers. Ведь все наши детали на 100% совместимы друг с другом. Ну а красивая, яркая коробка делает «Magformers Lighted Set» превосходным подарком.</p>
 									<p>Набор «Magformers Lighted Set» получил заслуженную награду — ассоциацией «Oppenheim Toy Portfolio» ему была присуждена платиновая медаль за 2013 год.</p>
 									<p>«Oppenheim Toy Portfolio» — независимый и некоммерческий обозреватель, с 1989 года тестирующий лучшие товары для детей. Отобранные игрушки проходят тройную экспертизу. В качестве экспертов выступают педагоги и детские психологи, родители и, конечно, дети.</p>
-									<button class="btn">Заказать</button>
-									<a href="#">В корзину</a>
+								
 								</div>
+								<button class="btn productItem">Заказать</button>
+								<a href="#" class="productItem">В корзину</a>
 							</div>
 						</div>
 					</div>
@@ -249,7 +258,7 @@
 							<img src="img/top-img1.jpg" alt="magformers">
 							<p>Элементов: 90 штук<br> Артикул: 456789</p>
 							<span>1 170 000 BYR</span>
-							<button class="btn">Заказать</button>
+							<button id="cartRainbow" class="btn productItem">Заказать</button>
 							<a href="#">Подробнее</a>
 						</li>
 						<li>
@@ -257,7 +266,7 @@
 							<img src="img/top-img1.jpg" alt="magformers">
 							<p>Элементов: 90 штук<br> Артикул: 456789</p>
 							<span>2 170 000 BYR</span>
-							<button class="btn">Заказать</button>
+							<button class="btn productItem">Заказать</button>
 							<a href="#">Подробнее</a>
 						</li>
 						<li>
@@ -265,7 +274,7 @@
 							<img src="img/top-img2.jpg" alt="magformers">
 							<p>Элементов: 90 штук<br> Артикул: 456789</p>
 							<span>2 140 000 BYR</span>
-							<button class="btn">Заказать</button>
+							<button class="btn productItem">Заказать</button>
 							<a href="#">Подробнее</a>
 						</li>
 					</ul>
@@ -377,7 +386,7 @@
 					<div class="contact-manager">
 						<h3>Нужна доставка в другой город Республики Беларусь?</h3>
 						<p>Поручите нашему менеджеру подобрать самый выгодный вариант</p>
-						<button class="btn">Поручить</button>
+						<a href="#callback" class="popup-mn"><button  class="btn">Поручить</button></a>
 					</div>
 				</div>
 			</section>
@@ -426,7 +435,7 @@
 					</div>
 					<div class="form-gifts">
 						<p>Разве вы не хотите узнать,<br> какой подарок может стать Вашим?</p>
-						<button class="btn">Хочу узнать!</button>
+						<a href="#callback" class="popup-mn"><button class="btn popup-mn">Хочу узнать!</button></a>
 					</div>
 				</div>
 			</section>
@@ -435,8 +444,8 @@
 					<h2>Ваш заказ</h2>
 					<div class="form-snake"></div>
 					<div class="table-scroll">
-						<table>
-							<caption>Сумма вашего заказа:<br> <span>8 100 000 BYR</span></caption>
+						<table id="tableCart">
+							<caption>Сумма вашего заказа:<br> <span id="total"></span></caption>
 							<tr>
 								<th>Название</th>
 								<th>Стоимость</th>
@@ -444,57 +453,7 @@
 								<th>Сумма</th>
 								<th><div class="cart-icon">1</div></th>
 							</tr>
-							<tr>
-								<td><a href="#">Magformers lighted set</a></td>
-								<td>2 700 000 BYR</td>
-								<td>
-									<div class="new-select-style-wpandyou">
-										<select name="cart" id="">
-											<option value="0">0</option>
-											<option value="1" selected>1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select>
-									</div>
-								</td>
-								<td>2 700 000 BYR</td>
-								<td><div class="cart-icon2">1</div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Magformers lighted set</a></td>
-								<td>2 700 000 BYR</td>
-								<td>
-									<div class="new-select-style-wpandyou">
-										<select name="cart" id="" value="1">
-											<option value="0">0</option>
-											<option value="1" selected>1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select>
-									</div>
-								</td>
-								<td>2 700 000 BYR</td>
-								<td><div class="cart-icon2">1</div></td>
-							</tr>
-							<tr>
-								<td><a href="#">Magformers lighted set</a></td>
-								<td>2 700 000 BYR</td>
-								<td>
-									<div class="new-select-style-wpandyou">
-										<select name="cart" id="">
-											<option value="0">0</option>
-											<option value="1" selected>1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-										</select>
-									</div>
-								</td>
-								<td>2 700 000 BYR</td>
-								<td><div class="cart-icon2">1</div></td>
-							</tr>
+
 						</table>
 					</div>
 					<div class="feedback-wrap">
@@ -518,7 +477,7 @@
 				<div class="form-snake"></div>
 				<ul class="contact-footer">
 					<li>
-						<a href="#" class="phone-footer"></a>
+						<a href="#callback" class="phone-footer popup-mn"></a>
 						<address><a href="">+375 (29) 633 44 31<br>+375 (33) 699 44 07</a></address>
 					</li>
 					<li>
@@ -534,14 +493,35 @@
 			<div class="copyright-wrapp">
 				<div class="container">
 					<div class="copyright">
-						<p>© 2015  Magformers.by<br>Создание и продвижение сайта </p>
-						<a href="https://www.imedia.by/" target="_blank"><img src="img/logo-copyright.png" alt="IMEDIA"></a>
-						<a href="#banner" class="top" onclick =window.scrollTo(0,0)>в начало<i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+						<p>© 2018  Magformers.by<br>Создание и продвижение сайта </p>
+						<a href="https://www.imedia.by/" target="_blank"><img src="img/es.png" alt="EvgenSkas"></a>
+						<a href="#banner" class="top">в начало<i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 					</div>
 				</div>
 			</div>
 		</section>
 	</footer>
+	<div class="hidden-form">
+		<form class="popup-form callback zoom-anim-dialog" id="callback">
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="A8 Компания">
+			<input type="hidden" name="admin_email" value="skaskevich23@gmail.com">
+			<input type="hidden" name="form_subject" value="Новая заявка с сайта А8">
+			<!-- END Hidden Required Fields -->
+
+			<h3>Оформление заказа</h3>
+			<p>Перезвоним Вам в течении 45 минут!<br>«Ваши данные в безопасности»</p>
+			<input type="text" name="phone" placeholder="+375(--) --- -- --" required>
+			<input type="text" name="email" placeholder="Ваше имя">
+			<button class="btn">Отправить</button>
+		</form>
+	</div>
+
+	<div id="hideBlockCart" class="hide">
+		<img src="img/basket.png" alt="cart">
+		<span></span>
+		<p>Добавлен в карзину!</p>
+	</div>
 	<script src="js/scripts.min.js"></script>
 
 </body>
