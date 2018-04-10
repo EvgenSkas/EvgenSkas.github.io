@@ -1,5 +1,5 @@
 <ifModule mod_expires.c>
-Header set X-XSS-Protection "1; mode=block" 
+Header set X-XSS-Protection "0" 
 # Add correct content-type for fonts
 AddType application/vnd.ms-fontobject .eot
 AddType application/x-font-ttf .ttf
