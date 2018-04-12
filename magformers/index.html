@@ -458,13 +458,14 @@
 						</table>
 					</div>
 					<div class="feedback-wrap">
-						<form class="feedback">
+						<form action="" class="feedback">
 							<h3>Оформление заказа</h3>
 							<p>Перезвоним Вам в течение 45 минут!<br>«Ваши данные в безопасности»</p>
-							<input type="text" class="name" placeholder="Ваше имя">
-							<input type="text" class="phone" placeholder="+375(--) --- -- -- *" required>
-							<input type="text" class="email" placeholder="Ваш адрес *" required>
-							<button class="btn">Отправить заказ</button>
+							<input type="text" name="name" class="name" placeholder="Ваше имя" data-valid="required" data-name>
+							<input type="text" name="phone" class="phone" placeholder="+375(--) --- -- -- *" data-valid="required" data-phone>
+							<input type="text" class="email" placeholder="Ваш адрес *" data-valid="required" data-email>
+							<div class="tooltip">Вам необходимо заполнить все поля!</div>
+							<input type="submit" class="btn">
 						</form>
 					</div>
 				</div>
@@ -512,8 +513,9 @@
 
 			<h3>Оформление заказа</h3>
 			<p>Перезвоним Вам в течении 45 минут!<br>«Ваши данные в безопасности»</p>
-			<input type="text" name="phone" placeholder="+375(--) --- -- --" required>
-			<input type="text" name="email" placeholder="Ваше имя">
+			<input type="text" name="phone" placeholder="+375(--) --- -- --" data-valid="required" data-phone>
+			<input type="text" name="email" placeholder="Ваш email" data-valid="required" data-email>
+			<div class="tooltip">Вам необходимо заполнить все поля!</div>
 			<button class="btn">Отправить</button>
 		</form>
 	</div>
@@ -522,6 +524,10 @@
 		<img src="img/basket.png" alt="cart">
 		<span></span>
 		<p>Добавлен в карзину!</p>
+	</div>
+	<div id="hideBlockCartForm" class="hide">
+		<img src="img/basket.png" alt="cart">
+		<p>Ваши данные успешно сохранены, перезвоним вам в течении 45 минут!</p>
 	</div>
 	<script src="js/scripts.min.js"></script>
 
