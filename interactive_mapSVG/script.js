@@ -19,7 +19,6 @@
 		console.log(point.innerHTML)
 	}
 	
-	let len = countries.length;
 	let	count = 0;
 	let	pointVal = 100;
 	let timer;
@@ -88,7 +87,7 @@
 				console.log(point.innerHTML)
 				start = true;
 				this.innerHTML = 'START';
-				return;
+				return false;
 		}
 		startHighlightCountries()
 		start = false;
