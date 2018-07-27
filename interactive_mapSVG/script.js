@@ -87,10 +87,12 @@
 				stopHighlightCountries();
 				console.log(point.innerHTML)
 				start = true;
+				this.innerHTML = 'START';
 				return;
 		}
 		startHighlightCountries()
 		start = false;
+		this.innerHTML = 'STOP';
 	})
 }())
 
